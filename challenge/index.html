@@ -5,24 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
+  <title>Mitrea Mihai Radu // Web Developer</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 
 <body>
+  <div id="wrapper">
   <!-- main logo / nav -->
-  <header>
-    <h1>Mitrea Mihai Radu</h1>
-    <div id="profile-picture">
+  <header class="header container">
+    <h1 class="title">Mitrea Mihai   Radu</h1>
+    <div id="profile-picture-container">
        <img class="profile-picture" src="images/profile-image.jpeg" alt="profile image">
     </div>
     
-    <nav id="header-navigation">
-      <ul>
-        <li>About Me</li>
-        <li>Work</li>
-        <li>Conctact Me</li>
-        <li>Resume</li>
+    <nav id="header-nav">
+      <ul class="nav-ul container">
+        <li class="nav-list-item">About Me</li>
+        <li class="nav-list-item">Work</li>
+        <li class="nav-list-item">Conctact Me</li>
+        <li class="nav-list-item">Resume</li>
       </ul>
     </nav>
   </header>
@@ -36,21 +37,22 @@
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
+    <section class="page-section container" id="about">
       <h2>About Me</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam adipisci, provident fugiat error ut tenetur aliquid vero atque corrupti pariatur consequuntur, placeat non. Cupiditate eveniet fugit vitae ducimus, esse quae.</p>
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+    <section class="page-section container" id="work">
       <h2>Work</h2>
+      <div class="container" id="item-catalogue">
       <div class="item">
         <h3>Weather app</h3>
-        <img src="" alt="">
+        <img src="#" alt="picture describing a Weather app">
       </div>
       <div class="item">
         <h3>Book Store</h3>
-        <img src="" alt="">
+        <img src="#" alt="">
       </div>
       <div class="item">
         <h3>Card Component</h3>
@@ -73,13 +75,13 @@
         <img src="" alt="">
       </div>
       
-        
+    </div> 
      
 
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section class="page-section contact container" id="contact">
       <h2>Contact Me</h2>
       <ul>
         <li class="about-me-list">Email:nefonjin@yahoo.com</li>
@@ -88,6 +90,8 @@
       </ul>
     </section>
   </main>
+
+</div>
 </body>
 
 </html>

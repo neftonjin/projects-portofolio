@@ -1,0 +1,90 @@
+* {
+  margin:0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img{
+  max-width: 100%;
+
+}
+
+#wrapper{ max-width: 1200px;
+  margin: 0 auto;
+  background-color: bisque;
+}
+.container{display: flex;}
+
+
+.profile-picture{
+  border-radius: 50%;
+  width: 120px;
+  border:solid 2px red;
+  position: absolute;
+  top: 200px;
+  left:50px;
+  
+}
+
+
+.header{
+
+  width:100%;
+  position: relative;
+  display: flex;
+  background-color: firebrick;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-ul{
+       list-style: none;
+       gap: 40px;
+       margin-right: 40px;
+       flex-wrap: wrap;
+}
+
+.hero-banner{
+  background-image: url(../images/02-hero-bg.jpg);
+  display: 100%;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+}
+
+.title{
+  padding: 0.5rem;
+}
+
+.page-section{
+  padding: 1rem;
+  border: 2px rebeccapurple solid;
+}
+#item-catalogue{
+  border: solid red 2px;
+}
+.item{
+  min-width: 200px;
+  flex-wrap: wrap;
+}
