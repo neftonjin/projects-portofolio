@@ -97,32 +97,39 @@ img {
 }
 
 #item1 {
-  background-image: url(../images/_nft-preview-cards_.png);
+  background-image: url(../images/flexbox-layout.png);
   grid-area: item1;
   flex-direction: column;
   justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
   /* position: relative; */
 
 }
 #item2 {
-  background-image: url(../images/02-portfolio-2.jpg);
+  background-image: url(../images/_nft-preview-cards_.png);
   grid-area: item2;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
   /* position: relative; */
 }
 #item3 {
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url(../images/_Css-selling-parfum-card_.png);
   grid-area: item3;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: cover;
   /* position: relative; */
 }
 #item4 {
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/titan.dcs.bbk.ac.uk___mmitre01_wd_fma_task2_apiweather.html.png);
   grid-area: item4;
   flex-direction: column;
   justify-content: flex-end;
+  background-size: cover;
   /* position: relative; */
 }
 #item5 {
@@ -130,6 +137,8 @@ img {
   grid-area: item5;
   flex-direction: column;
   justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* position: relative; */
 }
 #item6 {
@@ -137,6 +146,9 @@ img {
   grid-area: item6;
   flex-direction: column;
   justify-content: flex-end;
+  background-position:top ;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* position: relative; */
 }
 
@@ -158,15 +170,15 @@ img {
   box-shadow: outset;
   opacity: 1;
   cursor: pointer;
-  /* -webkit-box-shadow: 0px 16px 39px -23px rgba(230,85,85,1);
+  -webkit-box-shadow: 0px 16px 39px -23px rgba(230,85,85,1);
   -moz-box-shadow: 0px 16px 39px -23px rgba(230,85,85,1);
-  box-shadow: 0px 16px 39px -23px rgba(230,85,85,1); */
+  box-shadow: 0px 16px 39px -23px rgba(230,85,85,1);
 
-  -webkit-box-shadow: 0px 16px 47px -14px rgba(252,252,252,1);
+  /* -webkit-box-shadow: 0px 16px 47px -14px rgba(252,252,252,1);
 -moz-box-shadow: 0px 16px 47px -14px rgba(252,252,252,1);
 box-shadow: 0px 16px 47px -14px rgba(252,252,252,1);
+ */
 }
-
 #work {
   margin: 0 auto;
   display: grid;
