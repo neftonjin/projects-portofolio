@@ -34,10 +34,9 @@ img {
 #wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  /* background-color: rgba(88,115,86 ,0.9); */
-  background: rgb(63,148,91);
-background: linear-gradient(90deg, rgba(63,148,91,1) 0%, rgba(25,59,32,1) 100%);
-
+  /* background-color: rgba(88,115,86 ,0.8); */
+  background: rgba(63,148,91,0.8);
+ 
 
 }
 .container {
