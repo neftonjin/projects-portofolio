@@ -173,7 +173,7 @@ img {
   background-color: rgba(29,32,34, 0.8);
   position: relative;
   top: -10%;
-  display: inline-block; 
+  /* display: inline-block;  */
   max-height:fit-content; 
   padding: 1rem 0.4rem 0 0;
   border-radius: 8px;
