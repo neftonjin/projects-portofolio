@@ -26,13 +26,15 @@ p {
 }
 
 img {
-  max-width: 100%;
+ max-width: 100%;
+
+ 
 }
 
 #wrapper {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
-  /* background-color: rgb(180, 149, 111); */
+  background-color: rgba(180, 149, 111,0.7);
 }
 .container {
   display: flex;
@@ -51,6 +53,7 @@ img {
   color: aliceblue;
   width: 100%;
   position: relative;
+
   display: flex;
   background-color: rgb(29, 32, 34);
   justify-content: space-between;
@@ -72,6 +75,13 @@ img {
   background-size: cover;
   text-align: right;
 }
+.hero-banner div{
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 200px;
+}
+.hero-banner h2{ color: white;
+ background-color: black;}
 
 .title {
   padding: 0.5rem;
@@ -83,34 +93,52 @@ img {
 }
 
 #item1 {
-  background-image: url(../images/flexbox-layout.png);
+  background-image: url(../images/02-portfolio-1.jpg);
   grid-area: item1;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* position: relative; */
+
 }
 #item2 {
-  background-image: url(../images/_nft-preview-cards_.png);
+  background-image: url(../images/02-portfolio-2.jpg);
   grid-area: item2;
-  object-fit: ;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* position: relative; */
 }
 #item3 {
-  background-image: url(../images/_Css-selling-parfum-card_.png);
+  background-image: url(../images/02-portfolio-3.jpg);
   grid-area: item3;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* position: relative; */
 }
 #item4 {
-  background-image: url(../images/apiweather.png);
+  background-image: url(../images/02-portfolio-4.jpg);
   grid-area: item4;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* position: relative; */
 }
 #item5 {
   background-image: url(../images/book-store.png);
   grid-area: item5;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* position: relative; */
 }
 #item6 {
   background-image: url(../images/desktop\ niproject2_.png);
   grid-area: item6;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* position: relative; */
 }
 
 .item-first {
   min-height: 400px;
-  /* width: 40%; */
+  position: relative;
   border-radius: 8px;
   background-repeat: no-repeat;
   background-position: center;
@@ -121,30 +149,36 @@ img {
   min-height: 150px;
   margin: 1rem 0;
 }
-.item:hover{
+.item:hover , .item-first:hover{
   box-shadow: inset;
   opacity: 0.8;
   cursor: pointer;;
 }
 
 #work {
+  margin: 0 auto;
   display: grid;
   gap: 15px;
   grid:
-    " section-name item1 item1 item1 item1 "
-    " . item2 item2 item3 item3 "
-    " . item4 item4 item5 item5 "
-    " . item6 item6 . . ";
+    " section-name item1 item1 item1 item1 item1 item1 item1 item1 "
+    " . item2 item2 item2 item2 item3 item3  item3 item3 "
+    " . item4 item4 item4 item4 item5 item5  item5 item5 "
+    " . item6 item6 item6 item6 . . . .";
 }
-h3 {
-  background-color: rgba(67, 77, 83 , 0.9) ;
-  padding: 0.5rem;
-  color: wheat;
-}
+
 .section-name {
   grid-area: section-name;
 }
 .item-title {
+  background-color: rgba(29,32,34, 0.8);
+  position: relative;
+  top: -10%;
+  display: inline-block; 
+  max-height:fit-content; 
+  padding: 1rem 0.4rem 0 0;
+  border-radius: 8px;
+  margin:0 1rem ;
+ 
  
 }
 
@@ -156,11 +190,11 @@ h3 {
 }
 .section-name{
   border-right: 4px solid black;
-  padding: 2rem;
-  min-width: 210px
+  margin: 2rem 1rem;
+  min-width: 150px;
 }
 p{
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 #contact ul{
@@ -170,4 +204,32 @@ p{
   gap: 20px;
   justify-content: space-around;
   align-items: center;
+}
+ a{
+  /* display: block; */
+  /* padding: 0.2rem; */
+  color: azure;
+  text-decoration: none;
+  opacity: 0.8;
+} 
+a:hover{
+  color: white;
+  opacity: 1;
+  
+}
+.about-me-list a{
+  color: black;
+  font-weight: 900;
+}
+.item-subtitle{
+  color: aliceblue;
+  padding: 0.5rem;
+}
+.item-description{
+  color: antiquewhite;
+  font-weight: 500;
+}
+.image{
+  width: 100%;
+  border-radius: 8px;
 }
