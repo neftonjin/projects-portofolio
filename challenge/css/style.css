@@ -233,3 +233,40 @@ a:hover{
   width: 100%;
   border-radius: 8px;
 }
+
+
+@media screen and (max-width: 780px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  #work{
+    display: flex;
+    flex-direction:column;
+  }
+
+  #contact{
+    flex-direction: column;
+    align-items: center;
+   
+  }
+  #contact ul {
+    flex-direction: column;
+  }
+  .section-name{
+    border-right: none;
+    border-bottom:solid black 5px;
+  }
+  .header{
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-picture{
+    position:static;
+  }
+}
