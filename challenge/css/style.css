@@ -1,5 +1,5 @@
 * {
-  margin:0px;
+  margin: 0px;
   box-sizing: border-box;
   padding: 0px;
 }
@@ -7,7 +7,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -24,47 +25,46 @@ p {
   margin: 0;
 }
 
-img{
+img {
   max-width: 100%;
-
 }
 
-#wrapper{ max-width: 1200px;
+#wrapper {
+  max-width: 1440px;
   margin: 0 auto;
-  background-color: bisque;
+  /* background-color: rgb(180, 149, 111); */
 }
-.container{display: flex;}
+.container {
+  display: flex;
+}
 
-
-.profile-picture{
+.profile-picture {
   border-radius: 50%;
   width: 120px;
-  border:solid 2px red;
+  border: solid 1 px rgb(29, 32, 34);
   position: absolute;
   top: 200px;
-  left:50px;
-  
+  left: 50px;
 }
 
-
-.header{
-
-  width:100%;
+.header {
+  color: aliceblue;
+  width: 100%;
   position: relative;
   display: flex;
-  background-color: firebrick;
+  background-color: rgb(29, 32, 34);
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-ul{
-       list-style: none;
-       gap: 40px;
-       margin-right: 40px;
-       flex-wrap: wrap;
+.nav-ul {
+  list-style: none;
+  gap: 40px;
+  margin-right: 40px;
+  flex-wrap: wrap;
 }
 
-.hero-banner{
+.hero-banner {
   background-image: url(../images/02-hero-bg.jpg);
   display: 100%;
   min-height: 200px;
@@ -73,18 +73,101 @@ img{
   text-align: right;
 }
 
-.title{
+.title {
   padding: 0.5rem;
 }
 
-.page-section{
+.page-section {
   padding: 1rem;
-  border: 2px rebeccapurple solid;
+  border: 1px black solid;
 }
-#item-catalogue{
-  border: solid red 2px;
+
+#item1 {
+  background-image: url(../images/flexbox-layout.png);
+  grid-area: item1;
 }
-.item{
-  min-width: 200px;
-  flex-wrap: wrap;
+#item2 {
+  background-image: url(../images/_nft-preview-cards_.png);
+  grid-area: item2;
+  object-fit: ;
+}
+#item3 {
+  background-image: url(../images/_Css-selling-parfum-card_.png);
+  grid-area: item3;
+}
+#item4 {
+  background-image: url(../images/apiweather.png);
+  grid-area: item4;
+}
+#item5 {
+  background-image: url(../images/book-store.png);
+  grid-area: item5;
+}
+#item6 {
+  background-image: url(../images/desktop\ niproject2_.png);
+  grid-area: item6;
+}
+
+.item-first {
+  min-height: 400px;
+  /* width: 40%; */
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.item {
+  border-radius: 7px;
+  min-height: 150px;
+  margin: 1rem 0;
+}
+.item:hover{
+  box-shadow: inset;
+  opacity: 0.8;
+  cursor: pointer;;
+}
+
+#work {
+  display: grid;
+  gap: 15px;
+  grid:
+    " section-name item1 item1 item1 item1 "
+    " . item2 item2 item3 item3 "
+    " . item4 item4 item5 item5 "
+    " . item6 item6 . . ";
+}
+h3 {
+  background-color: rgba(67, 77, 83 , 0.9) ;
+  padding: 0.5rem;
+  color: wheat;
+}
+.section-name {
+  grid-area: section-name;
+}
+.item-title {
+ 
+}
+
+#about{
+  padding: 2rem 0.5rem;
+  margin-top: 4rem;
+  ;
+  
+}
+.section-name{
+  border-right: 4px solid black;
+  padding: 2rem;
+  min-width: 210px
+}
+p{
+  padding: 2rem;
+}
+
+#contact ul{
+  padding: 0.5rem;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
