@@ -152,11 +152,19 @@ img {
   border-radius: 7px;
   min-height: 150px;
   margin: 1rem 0;
+  opacity: 0.7;
 }
 .item:hover , .item-first:hover{
-  box-shadow: inset;
-  opacity: 0.8;
-  cursor: pointer;;
+  box-shadow: outset;
+  opacity: 1;
+  cursor: pointer;
+  /* -webkit-box-shadow: 0px 16px 39px -23px rgba(230,85,85,1);
+  -moz-box-shadow: 0px 16px 39px -23px rgba(230,85,85,1);
+  box-shadow: 0px 16px 39px -23px rgba(230,85,85,1); */
+
+  -webkit-box-shadow: 0px 16px 47px -14px rgba(252,252,252,1);
+-moz-box-shadow: 0px 16px 47px -14px rgba(252,252,252,1);
+box-shadow: 0px 16px 47px -14px rgba(252,252,252,1);
 }
 
 #work {
@@ -220,6 +228,9 @@ p{
   text-decoration: none;
   opacity: 0.8;
 } 
+.nav-list-item:hover{
+  opacity: 0.1;
+}
 a:hover{
   color: white;
   opacity: 1;
@@ -242,6 +253,9 @@ a:hover{
   border-radius: 8px;
 }
 
+.about-me-list a:hover{
+  opacity: 0.1;
+}
 
 @media screen and (max-width: 780px) {
   body {
@@ -278,7 +292,5 @@ a:hover{
   .profile-picture{
     position:static;
   }
-  .about-me-list a:hover{
-    opacity: 0.5;
-  }
+  
 }
